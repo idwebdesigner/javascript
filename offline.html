@@ -17,7 +17,6 @@
     </head>
 
     <body class="four-zero-content">
-        <img style="display:none;" src="http://javascript.learn.designer.web.id/img/logo.png" oneload="window.location='http://javascript.learn.designer.web.id/';">
         <div class="four-zero">
             <div class="fz-block" style="background:#1E262B;">
                 <div class="preloader pl-xxl">
@@ -37,7 +36,7 @@
 
             function online(event) {
               statusElem.className = navigator.onLine ? 'online' : 'offline';
-              statusElem.innerHTML = navigator.onLine ? '' : '<br/>You&#39;re offline, check network connection.<br/>content required internet access.';
+              statusElem.innerHTML = navigator.onLine ? '<br/><a href="load.html"><i class="zmdi zmdi-refresh-sync"></i> Click here to Refresh</a>' : '<br/>You&#39;re offline, check network connection.<br/>content required internet access.';
               state.innerHTML += '';
             }
 
@@ -55,13 +54,18 @@
 <script src="shuffleText/js/shuffletext.jquery.min.js"></script>
 <script>
  $('.demo').ShuffleText([
-  'Restarting application',
+  'Starting application',
+  "Connecting server...",
+  "Can't Load <b>Javascript Database</b>",
+  "Build <b>User Interface</b>",
+  "Please wait...",
+  "Check Network Connection",
+  'Retarting application',
   "Try connecting server",
-  "Can't Load <b>Javascript Database</b><br/>",
+  "Can't Load <b>Javascript Database</b>",
   "Failed Build <b>User Interface</b>",
   "Please wait...",
   "Check Network Connection",
-  "Connecting server...",
     ],{loop: true, delay: 5000});
 </script>
     </body>
