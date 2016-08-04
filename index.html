@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Material Admin</title>
+        <title>Learn IDWEBDesigner</title>
 
         <!-- Vendor CSS -->
         <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
         <script src="js/jquery-2.1.0.min.js"></script>
         <script>$(function(){
         $("#contentloader").load("http://app.nahwu.designer.web.id/content-message.html");
-        $("#contentloader2").load("http://app.nahwu.designer.web.id/content-message-count.html");
+        $("#contentloader2").load("content-message-count.html");
         $("#contentloader3").load("http://app.nahwu.designer.web.id/content-right.html");
         });</script>
 
@@ -30,17 +30,16 @@
         <header id="header" class="clearfix">
             <ul class="h-inner">
 
-                <li class="hi-logo" data-ma-action="sidebar-open" data-ma-target="#sidebar">
-                    <img src="img/logo.png" height="25px" style="margin-left:10px;margin-right:5px;"> <span style="font-size:15px;"> Learn<span>
+                <li class="hi-logo" data-ma-action="sidebar-open" data-ma-target="#sidebar" style="margin-top:5px;">
+                    <img src="img/logo.png" height="25px" style="margin-left:10px;margin-right:5px;"> <span style="font-size:15px;"> Learn Javascript<span>
                 </li>
 
                 <li class="pull-right">
                     <ul class="hi-menu">
 
-                        <li class="dropdown">
+                        <li style="margin-right:-15px;" class="dropdown">
                             <a data-toggle="dropdown" href="#">
                                 <i class="him-icon zmdi zmdi-notifications-none"></i>
-                                <i class="him-counts"><span id="contentloader2"></span></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-lg pull-right">
                                 <div class="list-group list-group-light">
@@ -72,12 +71,12 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="ma-trigger" data-ma-action="sidebar-open" data-ma-target="#chat">
+                        <li style="margin-right:-15px;" class="ma-trigger" data-ma-action="sidebar-open" data-ma-target="#chat">
                             <a data-toggle="dropdown" href="#">
                                 <i class="him-icon zmdi zmdi-favorite-outline"></i>
                             </a>
                         </li>
-                        <li class="dropdown">
+                        <li style="margin-right:-5px;" class="dropdown">
                             <a data-toggle="dropdown" href="#"><i class="him-icon zmdi zmdi-more-vert"></i></a>
                             <ul class="dropdown-menu dm-icon pull-right">
                                 <li class="hidden-xs">
@@ -87,10 +86,14 @@
                                     <a href="javascript:window.location.reload();"><i class="zmdi zmdi-refresh-sync"></i> Refresh</a>
                                 </li>
                                 <li>
-                                    <a href="market://details?id=id.web.designer.nahwu.apps"><i class="zmdi zmdi-star"></i> Rating 5 bintang</a>
+                                    <a href="market://details?id=id.web.designer.nahwu.apps"><i class="zmdi zmdi-star"></i> Rate 5 Stars</a>
                                 </li>
                                 <li>
-                                    <a href="update.html"><i class="zmdi zmdi-refresh-sync"></i> Cek update</a>
+                                    <a href="update.html"><i class="zmdi zmdi-share"></i> Share</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="update.html"><i class="zmdi zmdi-close"></i> Close</a>
                                 </li>
                             </ul>
                         </li>
@@ -109,7 +112,7 @@
                                         </li>
                                         <li role="presentation">
                                             <a class="col-xs-4" href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab">
-                                                <i class="zmdi zmdi-pin icon-tab"></i>
+                                                <i class="zmdi zmdi-github icon-tab"></i>
                                             </a>
                                         </li>
                                         <li role="presentation">
@@ -272,9 +275,9 @@
                         </div>
 
                             <!-- Recent Items -->
-                            <div class="card" style="margin-left:-20px;margin-right:-20px;">
+                            <div class="card" style="margin-left:-20px;margin-right:-20px;margin-bottom:-20px;">
                                 <div class="card-header">
-                                    <h2>Recent Items <small>Phasellus condimentum ipsum id auctor imperdie</small></h2>
+                                    <h2>Learn Javascript<small>Phasellus condimentum ipsum id auctor imperdie</small></h2>
                                     <ul class="actions">
                                         <li class="dropdown">
                                             <a href="#" data-toggle="dropdown">
@@ -282,14 +285,16 @@
                                             </a>
 
                                             <ul class="dropdown-menu dropdown-menu-right">
+                                                <span style="margin-left:20px;font-size:10px;color:#888888;">OUR SISTER APPS</span>
                                                 <li>
-                                                    <a href="#">Refresh</a>
+                                                    <a href="#"><i class="zmdi zmdi-google-play"></i> &nbsp;&nbsp;Javascript Database</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">Settings</a>
+                                                    <a href="#"><i class="zmdi zmdi-google-play"></i> &nbsp;&nbsp;CSS3 Database</a>
                                                 </li>
+                                                <li class="divider"></li>
                                                 <li>
-                                                    <a href="#">Other Settings</a>
+                                                    <a href="#"><i class="zmdi zmdi-shopping-cart"></i> &nbsp;&nbsp;Upgrade</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -302,34 +307,34 @@
                                         <tr>
                                             <th>ID</th>
                                             <th>Name</th>
-                                            <th style="width: 60px">Price</th>
+                                            <th style="width: 60px">LEARN</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td class="f-500">2569</td>
-                                            <td>Samsung Galaxy Mega</td>
-                                            <td class="f-500">$521</td>
+                                            <td class="f-500">AngularJS</td>
+                                            <td>Phasellus condimentum ipsum id auctor imperdie</td>
+                                            <td class="f-500">LEARN</td>
                                         </tr>
                                         <tr>
-                                            <td class="f-500">9658</td>
-                                            <td>Huawei Ascend P6</td>
-                                            <td class="f-500">$440</td>
+                                            <td class="f-500">Bootstrap</td>
+                                            <td>Phasellus condimentum ipsum id auctor imperdie</td>
+                                            <td class="f-500">LEARN</td>
                                         </tr>
                                         <tr>
-                                            <td class="f-500">1101</td>
-                                            <td>HTC One M8</td>
-                                            <td class="f-500">$680</td>
+                                            <td class="f-500">Font Awesome</td>
+                                            <td>Phasellus condimentum ipsum id auctor imperdie</td>
+                                            <td class="f-500">LEARN</td>
                                         </tr>
                                         <tr>
-                                            <td class="f-500">6598</td>
-                                            <td>Samsung Galaxy Alpha</td>
-                                            <td class="f-500">$870</td>
+                                            <td class="f-500">IONIS</td>
+                                            <td>Phasellus condimentum ipsum id auctor imperdie</td>
+                                            <td class="f-500">LEARN</td>
                                         </tr>
                                         <tr>
-                                            <td class="f-500">4562</td>
-                                            <td>LG G3</td>
-                                            <td class="f-500">$690</td>
+                                            <td class="f-500">D3</td>
+                                            <td>Phasellus condimentum ipsum id auctor imperdie</td>
+                                            <td class="f-500">LEARN</td>
                                         </tr>
                                         </tbody>
                                     </table>
