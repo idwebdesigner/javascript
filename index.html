@@ -18,6 +18,7 @@
 
         <script src="js/h5utils.js"></script>
         <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/jquery.jscroll.min.js"></script>
         <script>$(function(){
         $("#contentloader").load("http://app.nahwu.designer.web.id/content-message.html");
         $("#contentloader2").load("content-message-count.html");
@@ -269,7 +270,7 @@
                         </div>
 
                             <!-- Recent Items -->
-                            <div class="card" style="margin-left:-20px;margin-right:-20px;margin-bottom:-20px;">
+                            <div class="card" style="margin-left:-20px;margin-right:-20px;margin-bottom:-130px;">
                                 <div class="card-header">
                                     <h2>Learn Javascript<small>Phasellus condimentum ipsum id auctor imperdie</small></h2>
                                     <ul class="actions">
@@ -295,7 +296,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="card-body m-t-0">
+                                <div class="card-body m-t-0 scroll">
                                     <table class="table table-inner table-vmiddle">
                                         <thead>
                                         <tr>
@@ -332,9 +333,11 @@
                                         </tr>
                                         </tbody>
                                     </table>
+                                    <div style="padding-top:20px;padding-bottom:50px;background:;text-align:center;"><a href="content-index-2.html"><button class="btn bgm-bluegray btn-sm"> Load More</button></a></div>
+                                    <script>$('.scroll').jscroll({    autoTrigger: false});</script>
                                 </div>
-                            </div>
 
+                            </div>
                                         </div>
 
 
@@ -352,9 +355,7 @@
                                     </div>
         </section>
 
-        <footer id="footer">
-            Copyright &copy; 2016 IDWEBDesigner
-        </footer>
+
 
         <!-- Page Loader -->
         <div class="page-loader">
