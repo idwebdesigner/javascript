@@ -298,18 +298,18 @@
                                 </div>
 
                                 <div class="card-body m-t-0 scroll">
-                                    <table class="table table-inner table-hover table-vmiddle">
+                                    <table id="grid-basic2" class="table table-inner table-hover table-vmiddle">
                                         <thead>
                                         <tr>
-                                            <th>NAME</th>
-                                            <th>DESCRIPTION</th>
+                                            <th data-column-id="id" data-type="text">NAME</th>
+                                            <th data-column-id="description" data-type="text">DESCRIPTION</th>
                                             <th style="width: 60px">LEARN</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr onclick="location.href='index.html';" style="cursor:pointer;">
                                             <td class="f-500">AngularJS</td>
-                                            <td>Angular is a development platform for building mobile and desktop web applications.</td>
+                                            <td style="height: 100%">Angular is a development platform for building mobile and desktop web applications.</td>
                                             <td class="f-500"><a href="#">LEARN</a></td>
                                         </tr>
                                         <tr onclick="location.href='index.html';" style="cursor:pointer;">
@@ -592,57 +592,31 @@
                     }
                 }
               }
+              ),
+
+              $("#grid-basic2").bootgrid({
+                  templates: {
+        header: ""
+    },
+                    css: {
+                        icon: 'zmdi icon',
+                        iconColumns: 'zmdi-view-module',
+                        iconDown: 'zmdi-sort-amount-desc',
+                        iconRefresh: 'zmdi-refresh',
+                        iconUp: 'zmdi-sort-amount-asc'
+                    },
+                formatters: {
+                    learn: function(column, row)
+                    {
+                        return "<a href=\"http://" + row.learn + "\">" + row.learn + "</a>";
+                    }
+                }
+              }
               )
             });
         </script>
 
-        <!-- Data Table -->
-        <script type="text/javascript">
-            $(document).ready(function(){
-                //Basic Example
-                $("#data-table-basic").bootgrid({
-                    css: {
-                        icon: 'zmdi icon',
-                        iconColumns: 'zmdi-view-module',
-                        iconDown: 'zmdi-sort-amount-desc',
-                        iconRefresh: 'zmdi-refresh',
-                        iconUp: 'zmdi-sort-amount-asc'
-                    },
-                });
 
-                //Selection
-                $("#data-table-selection").bootgrid({
-                    css: {
-                        icon: 'zmdi icon',
-                        iconColumns: 'zmdi-view-module',
-                        iconDown: 'zmdi-sort-amount-desc',
-                        iconRefresh: 'zmdi-refresh',
-                        iconUp: 'zmdi-sort-amount-asc'
-                    },
-                    selection: true,
-                    multiSelect: true,
-                    rowSelect: true,
-                    keepSelection: true
-                });
-
-                //Command Buttons
-                $("#data-table-command").bootgrid({
-                    css: {
-                        icon: 'zmdi icon',
-                        iconColumns: 'zmdi-view-module',
-                        iconDown: 'zmdi-sort-amount-desc',
-                        iconRefresh: 'zmdi-refresh',
-                        iconUp: 'zmdi-sort-amount-asc'
-                    },
-                    formatters: {
-                        "commands": function(column, row) {
-                            return "<button type=\"button\" class=\"btn btn-icon command-edit waves-effect waves-circle\" data-row-id=\"" + row.id + "\"><span class=\"zmdi zmdi-edit\"></span></button> " +
-                                    "<button type=\"button\" class=\"btn btn-icon command-delete waves-effect waves-circle\" data-row-id=\"" + row.id + "\"><span class=\"zmdi zmdi-delete\"></span></button>";
-                        }
-                    }
-                });
-            });
-        </script>
 
     </body>
 
