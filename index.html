@@ -11,6 +11,7 @@
         <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
         <link href="vendors/bower_components/lightgallery/dist/css/lightgallery.min.css" rel="stylesheet">
         <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+        <link href="vendors/bootgrid/jquery.bootgrid.min.css" rel="stylesheet">
 
         <!-- CSS -->
         <link href="css/app_1.min.css" rel="stylesheet">
@@ -343,8 +344,127 @@
 
 
                                         <div role="tabpanel" class="tab-pane animated fadeIn" id="tab-2">
-                                            <img src="img/headers/sm/2.png" class="img-responsive m-b-15" alt="">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet dapibus tellus. Nullam aliquet dignissim semper. Cras sit amet ligula congue, dapibus enim id, dapibus tellus.
+
+                    <div class="card" style="margin-left:-20px;margin-right:-20px;margin-top:-15px;margin-bottom:-130px">
+                        <div class="card-header">
+                            <h2>Basic Example <small>It's just that simple. Turn your simple table into a sophisticated data table and offer your users a nice experience and great features without any effort.</small></h2>
+                        </div>
+
+                        <div class="table-responsive" style="width:90%;margin-left:5%;margin-right:5%;">
+                            <table id="data-table-basic" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th data-column-id="id" data-type="numeric">ID</th>
+                                        <th data-column-id="sender">Sender</th>
+                                        <th data-column-id="received" data-order="desc">Received</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10238</td>
+                                        <td>eduardo@pingpong.com</td>
+                                        <td>14.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10243</td>
+                                        <td>eduardo@pingpong.com</td>
+                                        <td>19.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10248</td>
+                                        <td>eduardo@pingpong.com</td>
+                                        <td>24.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10253</td>
+                                        <td>eduardo@pingpong.com</td>
+                                        <td>29.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10234</td>
+                                        <td>lila@google.com</td>
+                                        <td>10.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10239</td>
+                                        <td>lila@google.com</td>
+                                        <td>15.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10244</td>
+                                        <td>lila@google.com</td>
+                                        <td>20.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10249</td>
+                                        <td>lila@google.com</td>
+                                        <td>25.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10237</td>
+                                        <td>robert@bingo.com</td>
+                                        <td>13.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10242</td>
+                                        <td>robert@bingo.com</td>
+                                        <td>18.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10247</td>
+                                        <td>robert@bingo.com</td>
+                                        <td>23.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10252</td>
+                                        <td>robert@bingo.com</td>
+                                        <td>28.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10236</td>
+                                        <td>simon@yahoo.com</td>
+                                        <td>12.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10241</td>
+                                        <td>simon@yahoo.com</td>
+                                        <td>17.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10246</td>
+                                        <td>simon@yahoo.com</td>
+                                        <td>22.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10251</td>
+                                        <td>simon@yahoo.com</td>
+                                        <td>27.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10235</td>
+                                        <td>tim@microsoft.com</td>
+                                        <td>11.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10240</td>
+                                        <td>tim@microsoft.com</td>
+                                        <td>16.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10245</td>
+                                        <td>tim@microsoft.com</td>
+                                        <td>21.10.2013</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10250</td>
+                                        <td>tim@microsoft.com</td>
+                                        <td>26.10.2013</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
                                         </div>
 
                                         <div role="tabpanel" class="tab-pane animated fadeIn" id="tab-3" style="margin-top:-20px;margin-left:-20px;margin-right:-20px;background:#2A3339;margin-bottom:-130px;">
@@ -464,6 +584,7 @@
         <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
         <script src="vendors/bower_components/sweetalert/dist/sweetalert.min.js"></script>
         <script src="vendors/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script>
+        <script src="vendors/bootgrid/jquery.bootgrid.updated.min.js"></script>
 
         <!-- Placeholder for IE9 -->
         <!--[if IE 9 ]>
@@ -471,6 +592,55 @@
         <![endif]-->
 
         <script src="js/app.min.js"></script>
+
+        <!-- Data Table -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                //Basic Example
+                $("#data-table-basic").bootgrid({
+                    css: {
+                        icon: 'zmdi icon',
+                        iconColumns: 'zmdi-view-module',
+                        iconDown: 'zmdi-sort-amount-desc',
+                        iconRefresh: 'zmdi-refresh',
+                        iconUp: 'zmdi-sort-amount-asc'
+                    },
+                });
+
+                //Selection
+                $("#data-table-selection").bootgrid({
+                    css: {
+                        icon: 'zmdi icon',
+                        iconColumns: 'zmdi-view-module',
+                        iconDown: 'zmdi-sort-amount-desc',
+                        iconRefresh: 'zmdi-refresh',
+                        iconUp: 'zmdi-sort-amount-asc'
+                    },
+                    selection: true,
+                    multiSelect: true,
+                    rowSelect: true,
+                    keepSelection: true
+                });
+
+                //Command Buttons
+                $("#data-table-command").bootgrid({
+                    css: {
+                        icon: 'zmdi icon',
+                        iconColumns: 'zmdi-view-module',
+                        iconDown: 'zmdi-sort-amount-desc',
+                        iconRefresh: 'zmdi-refresh',
+                        iconUp: 'zmdi-sort-amount-asc'
+                    },
+                    formatters: {
+                        "commands": function(column, row) {
+                            return "<button type=\"button\" class=\"btn btn-icon command-edit waves-effect waves-circle\" data-row-id=\"" + row.id + "\"><span class=\"zmdi zmdi-edit\"></span></button> " +
+                                    "<button type=\"button\" class=\"btn btn-icon command-delete waves-effect waves-circle\" data-row-id=\"" + row.id + "\"><span class=\"zmdi zmdi-delete\"></span></button>";
+                        }
+                    }
+                });
+            });
+        </script>
+
     </body>
 
 </html>
