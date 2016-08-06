@@ -30,6 +30,26 @@
                             </div>
                 <h2><div style="margin-top:100px;"><b>Learn</b> Javascript </div></h2>
                 <h5><div style="margin-top:10px;" class="demo"></div></h5>
+
+            <article>
+              <p style="font-size:0.7em;margin-left:5px;"><span id="status"><span id="status">checking...</span></p>
+              <ol id="state"></ol>
+            </article>
+            <script>
+            var statusElem  = document.getElementById('status'),
+                state               = document.getElementById('state');
+
+            function online(event) {
+              statusElem.className = navigator.onLine ? 'online' : 'offline';
+              statusElem.innerHTML = navigator.onLine ? '' : '<br/>You&#39;re offline, check network connection.<br/>content required internet access.';
+              state.innerHTML += '';
+            }
+
+            addEvent(window, 'online', online);
+            addEvent(window, 'offline', online);
+            online({ type: 'ready' });
+            </script>
+
         </div>
 
         <script src="js/jquery-2.1.0.min.js"></script>
