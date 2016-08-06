@@ -544,10 +544,11 @@
 
         <!-- Page Loader -->
         <div class="page-loader">
-            <div class="preloader pls-white">
+            <div class="preloader pls-white" style="text-align:center;">
                 <svg class="pl-circular" viewBox="25 25 50 50">
                     <circle class="plc-path" cx="50" cy="50" r="20" />
-                </svg>
+                </svg><br/><br/>
+                <div style="font-size:8px;margin-left:-80px;width:200px" class="demo"></div>
             </div>
         </div>
 
@@ -592,31 +593,20 @@
                     }
                 }
               }
-              ),
-
-              $("#grid-basic2").bootgrid({
-                  templates: {
-        header: ""
-    },
-                    css: {
-                        icon: 'zmdi icon',
-                        iconColumns: 'zmdi-view-module',
-                        iconDown: 'zmdi-sort-amount-desc',
-                        iconRefresh: 'zmdi-refresh',
-                        iconUp: 'zmdi-sort-amount-asc'
-                    },
-                formatters: {
-                    learn: function(column, row)
-                    {
-                        return "<a href=\"http://" + row.learn + "\">" + row.learn + "</a>";
-                    }
-                }
-              }
               )
             });
         </script>
 
-
+        <script src="shuffleText/js/shuffletext.jquery.min.js"></script>
+        <script>
+         $('.demo').ShuffleText([
+          'Starting application',
+          "Connecting server...",
+          "Load <b>Javascript Database</b>",
+          "Build <b>User Interface</b>...",
+          "Please wait...",
+            ],{loop: false, delay: 500});
+        </script>
 
     </body>
 
