@@ -215,12 +215,12 @@
                         <ul class="actions">
                             <li>
 
-                                <a href="http://fontawesome.io/">
+                                <a id="sa-basic">
                                     <i class="zmdi zmdi-globe"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/FortAwesome/Font-Awesome">
+                                <a id="sa-github">
                                     <i class="zmdi zmdi-github"></i>
                                 </a>
                             </li>
@@ -237,7 +237,7 @@
                                         <a href="update.html">Check Update</a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/FortAwesome/Font-Awesome/archive/master.zip">Download</a>
+                                        <a id="sa-download">Download</a>
                                     </li>
                                 </ul>
                             </li>
@@ -364,6 +364,56 @@
         <script src="vendors/bower_components/mediaelement/build/mediaelement-and-player.js"></script>
 
         <script src="js/app.min.js"></script>
+
+        <script type="text/javascript">
+            //Basic
+            $('#sa-basic').click(function(e){
+                e.preventDefault();
+                var link = $(this).attr('href');
+
+                swal({
+                    title: "Website Font Awesome",
+                    text: "We will redirect to Website Font Awesome. By clicking 'OK' you will be redirected.",
+                    showCancelButton: true,
+                    allowOutsideClick: true,
+                },
+                function(){
+                    window.location.href = 'http://fontawesome.io/';
+                });
+            });
+
+            $('#sa-github').click(function(e){
+                e.preventDefault();
+                var link = $(this).attr('href');
+
+                swal({
+                    title: "GitHub Font Awesome",
+                    text: "We will redirect to Github Font Awesome. By clicking 'OK' you will be redirected.",
+                    showCancelButton: true,
+                    allowOutsideClick: true,
+                },
+                function(){
+                    window.location.href = 'https://github.com/FortAwesome/Font-Awesome';
+                });
+            });
+
+            $('#sa-download').click(function(e){
+                e.preventDefault();
+                var link = $(this).attr('href');
+
+                swal({
+                    title: "Download as ZIP file?",
+                    text: "Are you sure to download a branch as zip file?, by clicking 'OK' will be procees.",
+                    showCancelButton: true,
+                    allowOutsideClick: true,
+                },
+                function(){
+                    window.location.href = 'https://github.com/FortAwesome/Font-Awesome/archive/master.zip';
+                });
+            });
+
+        </script>
+
     </body>
 
 </html>
